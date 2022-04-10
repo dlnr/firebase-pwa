@@ -1,0 +1,46 @@
+@import url('https://rsms.me/inter/inter.css');
+
+:root {
+    --dark: hsl(345, 6%, 13%);
+    --light: hsl(300, 2%, 92%);
+
+    --background: var(--dark);
+    --foreground: var(--light);
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --background: var(--light);
+        --foreground: var(--dark);
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Inter', system-ui, sans-serif;
+    scroll-behavior: smooth;
+}
+
+@supports (font-variation-settings: normal) {
+    html {
+        font-family: 'Inter var', system-ui, sans-serif;
+        font-feature-settings: 'pnum' on, 'lnum' on, 'ss01' on, 'zero' on, 'case' on, 'ccpm' on;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+    color: var(--foreground);
+}
+
+.full {
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    height:  100vh;
+}
