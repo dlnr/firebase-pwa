@@ -1,7 +1,6 @@
 node_modules/
-.firebase/
-.github/
 build/
+.firebase/
 .firebaserc
 *.log
 functions/index.js
