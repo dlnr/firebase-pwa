@@ -1,6 +1,5 @@
 node_modules/
 .firebase/
-.github/
 build/
 .firebaserc
 *.log
