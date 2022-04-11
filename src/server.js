@@ -22,4 +22,4 @@ app.get(routes.get('index'), async (req, res) => {
     res.end();
   });
 
-  export const handleRequest = functions.https.onRequest(app);
+  export const handleRequest = functions.region('europe-west1').https.onRequest(app);
