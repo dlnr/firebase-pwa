@@ -1,7 +1,6 @@
 import express from 'express';
 import functions from 'firebase-functions';
 import https from 'https';
-// import LRU from 'lru-cache';
 
 import routes from './lib/routes.mjs';
 
@@ -20,6 +19,6 @@ app.get(routes.get('index'), async (req, res) => {
     res.write(startPartial);
     res.write(footerPartial);
     res.end();
-  });
+});
 
-  export const handleRequest = functions.region('europe-west1').https.onRequest(app);
+export const handleRequest = functions.region('europe-west1').https.onRequest(app);
